@@ -1,0 +1,103 @@
+:root {
+    --white: #FFFFFF;
+    --light-light-gray: #E9F1F2;
+    --light-gray: #D0D8DA;
+}
+
+.fvfvfv {
+    color: #6DCEF5;
+    color: #C1E3FE;
+    color: #46B5E5;
+    color: #1E5EF2;
+    color: #0038FF;
+    color: #2490D8;
+    color: #1A2B4C;
+    color: #3A49E0;
+    color: #2000E6;
+    color: #93999A;
+    color: #656B76;
+    color: #323232;
+    color: #FFEA00;
+    color: #FFD000;
+    color: #FCBC04;
+    color: #FFA200;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #46B5E5;
+    color: var(--white);
+    font-family: Arial, sans-serif;
+}
+
+/* Стилизация логотипа */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+}
+
+.logo img {
+    height: 48px;
+}
+
+.logo h1 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: default;
+    white-space: normal;
+}
+
+/* Стилизация навигационной панели */
+
+.nav-bar {
+    height: 100%;
+    background-color: #46B5E5;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100%;
+}
+
+.nav-bar li {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar li a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0 1rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.nav-bar li a:hover {
+    background-color: #5fcfff;
+}
+
+.nav-bar li a.active {  
+    background-color: #2490D8;  
+}  
