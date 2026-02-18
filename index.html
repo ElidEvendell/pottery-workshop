@@ -44,5 +44,15 @@
         <a target="_blank" href="https://icons8.com/icon/qVL8v8uZv9wc/pottery">Глиняная посуда</a> иконка от <a target="_blank" href="https://icons8.com">Icons8</a>
         &copy; А. О. Федорова, 2026
     </footer>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navMenu = document.querySelector('.nav-bar-items');
+
+        menuIcon.addEventListener('click', (event) => {
+            event.preventDefault();
+            navMenu.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
