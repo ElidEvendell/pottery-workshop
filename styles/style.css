@@ -2,6 +2,11 @@
     --white: #FFFFFF;
     --light-light-gray: #E9F1F2;
     --light-gray: #D0D8DA;
+    --gray: #93999A;
+    --dark-gray: #656B76;
+    --hardly-black: #323232;
+    --light-yellow: #FFEA00;
+    --yellow: #FFD000;
 }
 
 .fvfvfv {
@@ -14,11 +19,6 @@
     color: #1A2B4C;
     color: #3A49E0;
     color: #2000E6;
-    color: #93999A;
-    color: #656B76;
-    color: #323232;
-    color: #FFEA00;
-    color: #FFD000;
     color: #FCBC04;
     color: #FFA200;
 }
@@ -29,7 +29,14 @@
     font-family: Arial, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
     height: 70px;
     width: 100%;
     display: flex;
@@ -64,19 +71,23 @@ header {
 /* Стилизация навигационной панели */
 
 .nav-bar {
+    position: relative;
     height: 100%;
     background-color: #46B5E5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.nav-bar ul {
+.nav-bar-items {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: stretch;
     height: 100%;
 }
 
-.nav-bar li {
+.nav-bar-items li {
     display: flex;
     align-items: center;
 }
@@ -101,3 +112,53 @@ header {
 .nav-bar li a.active {  
     background-color: #2490D8;  
 }  
+
+
+.menu-icon {
+    display: none;
+}
+
+main {
+    margin-top: 70px;
+}
+
+@media(max-width: 600px) {
+  .menu-icon {
+    display: block;
+  }
+  .nav-bar-items {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: auto;
+    width: auto;
+    min-width: 200px;
+    height: auto;
+    max-height: calc(100vh - 70px);
+    overflow-y:auto;
+    flex-direction: column;
+    background-color: #46B5E5;
+    align-items: center;
+    z-index: 999;
+  }
+  .nav-bar-items li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-bar-items li a {
+    font-size: 1.2rem;
+    display: block;
+    padding: 1rem;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    overflow-wrap: break-word;
+  }
+
+  .nav-bar:hover .nav-bar-items {
+    display: flex;
+  }
+}
+
