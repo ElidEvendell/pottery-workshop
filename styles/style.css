@@ -123,10 +123,6 @@ main {
 }
 
 @media(max-width: 600px) {
-
-  body {
-      background-color: red;
-  }  
   .menu-icon {
     display: block;
   }
