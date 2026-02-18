@@ -7,20 +7,14 @@
     --hardly-black: #323232;
     --light-yellow: #FFEA00;
     --yellow: #FFD000;
-}
-
-.fvfvfv {
-    color: #6DCEF5;
-    color: #C1E3FE;
-    color: #46B5E5;
-    color: #1E5EF2;
-    color: #0038FF;
-    color: #2490D8;
-    color: #1A2B4C;
-    color: #3A49E0;
-    color: #2000E6;
-    color: #FCBC04;
-    color: #FFA200;
+    --light-orange: #FCBC04;
+    --orange: #FFA200;
+    --light-light-blue:  #5FCFFF;
+    --light-blue: #6DCEF5;
+    --not-light-blue: #2490D8;
+    --blue: #46B5E5;
+    --dark-blue: #1A2B4C;
+    --bright-blue: #2000E6;
 }
 
 * {
@@ -42,7 +36,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #46B5E5;
+    background-color: var(--blue);
     color: var(--white);
     font-family: Arial, sans-serif;
 }
@@ -61,7 +55,7 @@ header {
 }
 
 .logo h1 {
-    color: #ffffff;
+    color: var(--white);
     font-size: 1.5rem;
     font-weight: bold;
     cursor: default;
@@ -73,7 +67,7 @@ header {
 .nav-bar {
     position: relative;
     height: 100%;
-    background-color: #46B5E5;
+    background-color: var(--blue);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -96,7 +90,7 @@ header {
     display: flex;
     align-items: center;
     height: 100%;
-    color: #FFFFFF;
+    color: var(--white);
     text-align: center;
     padding: 0 1rem;
     text-decoration: none;
@@ -106,15 +100,15 @@ header {
 }
 
 .nav-bar li a:hover {
-    background-color: #5fcfff;
+    background-color: var(--light-light-blue);
 }
 
 .nav-bar li a.active {  
-    background-color: #2490D8;  
+    background-color: var(--not-light-blue);  
 }  
 
 
-.menu-icon {
+.menu-icon a img {
     display: none;
 }
 
@@ -123,7 +117,7 @@ main {
 }
 
 @media(max-width: 600px) {
-  .menu-icon {
+  .menu-icon a img {
     display: block;
   }
   .nav-bar-items {
@@ -138,7 +132,7 @@ main {
     max-height: calc(100vh - 70px);
     overflow-y:auto;
     flex-direction: column;
-    background-color: #46B5E5;
+    background-color: var(--blue);
     align-items: center;
     z-index: 999;
   }
