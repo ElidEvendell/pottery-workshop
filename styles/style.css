@@ -136,6 +136,11 @@ main {
     align-items: center;
     z-index: 999;
   }
+
+  .nav-bar-items.show {
+    display: flex;
+  }
+
   .nav-bar-items li {
     width: 100%;
     text-align: center;
@@ -149,10 +154,6 @@ main {
     width: 100%;
     text-align: center;
     overflow-wrap: break-word;
-  }
-
-  .nav-bar:hover .nav-bar-items {
-    display: flex;
   }
 }
 
