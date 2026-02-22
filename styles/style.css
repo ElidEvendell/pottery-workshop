@@ -116,6 +116,30 @@ main {
     margin-top: 70px;
 }
 
+.about ul {
+
+}
+
+/* Стили таблицы */
+
+caption {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.not-curr-month {
+    color: var(--dark-gray);
+}
+
+/* Стили расписания */
+
+.schedule {
+
+}
+
+.next-month {
+}
+
 @media(max-width: 600px) {
   .menu-icon {
     display: block;
