@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -28,31 +30,147 @@
 
     <main>
         <section>
-            <div id="about"></div>
-            
-            <div id="schedule">jjnhnh</div>
+            <div id="about">
+                <p>Студия гончарного мастерства «Живая глина» - прекрасное место чтобы отдохнуть, перезагрузиться,
+                    провести время с любимыми или друзьями и возможно даже - найти новое хобби!</p>
+                <ul>
+                    <li>Наш адрес -</li>
+                    <li>Наш номер - </li>
+                    <li>Мы в Телеграмм - </li>
+                    <li>Мы в VK - </li>
+                </ul>
+            </div>
 
-            <div id="prices">jnjnjnjn</div>
+            <div id="schedule">
+                <table class="current-month">
+                    <thead>
+                        <caption>Февраль</caption>
+                        <tr>
+                            <th class="weekday">ПН</th> <th class="weekday">ВТ</th> <th class="weekday">СР</th> <th class="weekday">ЧТ</th> <th class="weekday">ПТ</th> <th class="weekday">СБ</th> <th class="weekday">ВС</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="not-curr-month">26</td> <td class="not-curr-month">27</td> <td class="not-curr-month">28</td> <td class="not-curr-month">29</td> <td class="not-curr-month">30</td> <td class="not-curr-month">31</td> <td>1</td> 
+                        </tr>
 
-            <div id="appointment"></div>
+                        <tr>
+                            <td>2</td> <td>3</td> <td>4</td> <td>5</td> <td>6</td> <td>7</td> <td>8</td>
+                        </tr>
 
-            <div id="answers"></div>
+                        <tr>
+                            <td>9</td> <td>10</td> <td>11</td> <td>12</td> <td>13</td> <td>14</td> <td>15</td>
+                        </tr>
+
+                        <tr>
+                            <td>16</td> <td>17</td> <td>18</td> <td>19</td> <td>20</td> <td>21</td> <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>23</td> <td>24</td> <td>25</td> <td>26</td> <td>27</td> <td>28</td> <td class="not-curr-month">1</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <table class="next-month">
+                    <thead>
+                        <caption>Март</caption>
+                        <tr>
+                            <th class="weekday">ПН</th> <th class="weekday">ВТ</th> <th class="weekday">СР</th> <th class="weekday">ЧТ</th> <th class="weekday">ПТ</th> <th class="weekday">СБ</th> <th class="weekday">ВС</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="not-curr-month">26</td> <td class="not-curr-month">27</td> <td class="not-curr-month">28</td> <td class="not-curr-month">29</td> <td class="not-curr-month">30</td> <td class="not-curr-month">31</td> <td>1</td> 
+                        </tr>
+
+                        <tr>
+                            <td>2</td> <td>3</td> <td>4</td> <td>5</td> <td>6</td> <td>7</td> <td>8</td>
+                        </tr>
+
+                        <tr>
+                            <td>9</td> <td>10</td> <td>11</td> <td>12</td> <td>13</td> <td>14</td> <td>15</td>
+                        </tr>
+
+                        <tr>
+                            <td>16</td> <td>17</td> <td>18</td> <td>19</td> <td>20</td> <td>21</td> <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>23</td> <td>24</td> <td>25</td> <td>26</td> <td>27</td> <td>28</td> <td class="not-curr-month">1</td>
+                        </tr>
+                    </tbody>
+            </div>
+
+            <div id="prices">
+                <article class="price-card" id="once"></article>
+                <article class="price-card" id="abonement1"></article>
+                <article class="price-card" id="abonement2"></article>
+                <article class="price-card" id="maybe_holiday"></article>
+            </div>
+
+            <div id="appointment">
+
+                <form action="send_form.php" method="POST">  
+                    <div>  
+                        <label for="name">Ваше имя:</label>  
+                        <input type="text" id="name" name="name" required>  
+                    </div>  
+                    <div>  
+                        <label for="email">Email:</label>  
+                        <input type="email" id="email" name="email" required>  
+                    </div>  
+                    <div>  
+                        <label for="subject">Тема:</label>  
+                        <input type="text" id="subject" name="subject" required>  
+                    </div>  
+                    <div>  
+                        <label for="message">Сообщение:</label>  
+                        <textarea id="message" name="message" rows="5" required></textarea>  
+                    </div>  
+                    <button type="submit">Отправить</button>  
+                </form>
+
+
+            </div>
+
+            <div id="answers">
+
+                <div id="qa1">
+                    <p id="q1"></p>
+                    <p id="a1"></p>
+                </div>
+
+                <div id="qa2">
+                    <p id="q2"></p>
+                    <p id="a2"></p>
+                </div>
+
+                <div id="qa3">
+                    <p id="q3"></p>
+                    <p id="a3"></p>
+                </div>
+
+                <div id="qa4">
+                    <p id="q4"></p>
+                    <p id="a4"></p>
+                </div>
+
+                <div id="qa5">
+                    <p id="q5"></p>
+                    <p id="a5"></p>
+                </div>
+
+            </div>
         </section>
     </main>
 
     <footer>
-        <a target="_blank" href="https://icons8.com/icon/qVL8v8uZv9wc/pottery">Глиняная посуда</a> иконка от <a target="_blank" href="https://icons8.com">Icons8</a>
+        <a target="_blank" href="https://icons8.com/icon/qVL8v8uZv9wc/pottery">Глиняная посуда</a> иконка от <a
+            target="_blank" href="https://icons8.com">Icons8</a>
         &copy; А. О. Федорова, 2026
     </footer>
 
-    <script>
-        const menuIcon = document.querySelector('.menu-icon');
-        const navMenu = document.querySelector('.nav-bar-items');
-
-        menuIcon.addEventListener('click', (event) => {
-            event.preventDefault();
-            navMenu.classList.toggle('show');
-        });
-    </script>
+    <script src="scripts/icon_script.js"></script>
 </body>
+
 </html>
