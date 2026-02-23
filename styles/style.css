@@ -116,9 +116,39 @@ main {
     margin-top: 70px;
 }
 
-.about ul {
+/* Стили секции о нас */
 
+.about {
+    margin-top: 75px;
 }
+
+.about .logo-and-add {
+    display: flex;
+    align-items: center;
+}
+
+.about ul {
+    list-style: none;
+}
+
+.about div {
+    width: 100%;
+}
+
+.about-logo {
+ text-align: center;
+}
+
+.about-logo img {
+    width: 90%;
+    border-radius: 30px;
+}
+
+.about p {
+    font-size: 1.1em;
+    font-style: oblique;
+}
+
 
 /* Стили таблицы */
 
@@ -131,13 +161,41 @@ caption {
     color: var(--dark-gray);
 }
 
+.weekend {
+    background-color: rgba(249, 135, 135, 0.449)
+}
+
 /* Стили расписания */
+
+.calendar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
 
 .schedule {
 
 }
 
 .next-month {
+}
+
+/* Адаптив */
+
+
+@media(max-width: 500px) {
+    .about .logo-and-add {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .about-logo img {
+        width: 40%;
+        border-radius: 15px;
+    }
 }
 
 @media(max-width: 600px) {
