@@ -36,7 +36,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--blue);
+    background-color: var(--light-orange);
     color: var(--white);
     font-family: Arial, sans-serif;
 }
@@ -67,7 +67,7 @@ header {
 .nav-bar {
     position: relative;
     height: 100%;
-    background-color: var(--blue);
+    background-color: var(--light-orange);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -100,11 +100,11 @@ header {
 }
 
 .nav-bar li a:hover {
-    background-color: var(--light-light-blue);
+    background-color: var(--yellow);
 }
 
 .nav-bar li a.active {  
-    background-color: var(--not-light-blue);  
+    background-color: var(--orange);  
 }  
 
 
@@ -182,6 +182,47 @@ caption {
 .next-month {
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid var(--gray);
+    padding: 8px;
+    text-align: center;
+}
+
+.prices {
+    display: flex;
+    gap: 20px;
+}
+
+.price-card {
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 2px 3px #1A2B4C;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price-tag {
+    border: 1px solid var(--hardly-black);
+    border-radius: 10px;
+    background-color: var(--light-orange);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+
+
+#maybe_holiday_for_one, #maybe_holiday_for_couple {
+    display: none;
+}
+
 /* Адаптив */
 
 
@@ -214,7 +255,7 @@ caption {
     max-height: calc(100vh - 70px);
     overflow-y:auto;
     flex-direction: column;
-    background-color: var(--blue);
+    background-color: var(--orange);
     align-items: center;
     z-index: 999;
   }
