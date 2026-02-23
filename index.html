@@ -30,87 +30,117 @@
 
     <main>
         <section>
-            <div id="about">
-                <p>Студия гончарного мастерства «Живая глина» - прекрасное место чтобы отдохнуть, перезагрузиться,
-                    провести время с любимыми или друзьями и возможно даже - найти новое хобби!</p>
+            <div id="about" class="about">
+                <div class="logo-and-add">
+                    <div class="about-logo"><img src="images/horces_and_teacher.jpg" alt="Наш преподователь"></div>
+                    <p>Студия гончарного мастерства «Живая глина» - прекрасное место чтобы провести время с любимыми и друзьями, отдохнуть, перезагрузиться и возможно даже - найти новое хобби!</p>
+                </div>
+                <br>
                 <ul>
-                    <li>Наш адрес -</li>
-                    <li>Наш номер - </li>
-                    <li>Мы в Телеграмм - </li>
+                    <li>Наш адрес - Москва, улица Крылатские холмы, д.26 к.2</li>
+                    <li>Наш номер - <a href="tel:89030096000">8 (903) 009-60-00</a></li>
+                    <li>Мы в Телеграмм - <a href="https://t.me/zjivaiaglina">Студия "Живая глина" керамика ул. Крылатские холмы д. 26 к. 2</a></li>
                     <li>Мы в VK - </li>
                 </ul>
             </div>
 
             <div id="schedule">
-                <table class="current-month">
-                    <thead>
-                        <caption>Февраль</caption>
-                        <tr>
-                            <th class="weekday">ПН</th> <th class="weekday">ВТ</th> <th class="weekday">СР</th> <th class="weekday">ЧТ</th> <th class="weekday">ПТ</th> <th class="weekday">СБ</th> <th class="weekday">ВС</th> 
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="not-curr-month">26</td> <td class="not-curr-month">27</td> <td class="not-curr-month">28</td> <td class="not-curr-month">29</td> <td class="not-curr-month">30</td> <td class="not-curr-month">31</td> <td>1</td> 
-                        </tr>
+                <ul class="calendar">
+                    <li>
+                        <table class="current-month">
+                            <thead>
+                                <caption>Февраль</caption>
+                                <tr>
+                                    <th class="weekday">ПН</th> <th class="weekday">ВТ</th> <th class="weekday">СР</th> <th class="weekday">ЧТ</th> <th class="weekday">ПТ</th> <th class="weekday">СБ</th> <th class="weekday">ВС</th> 
+                                </tr>
+                            </thead>
 
-                        <tr>
-                            <td>2</td> <td>3</td> <td>4</td> <td>5</td> <td>6</td> <td>7</td> <td>8</td>
-                        </tr>
+                            <tbody>
+                                <tr>
+                                    <td class="not-curr-month">26</td> <td class="not-curr-month">27</td> <td class="not-curr-month">28</td> <td class="not-curr-month">29</td> <td class="not-curr-month">30</td> <td class="not-curr-month weekend">31</td> <td class="no-class weekend">1</td> 
+                                </tr>
 
-                        <tr>
-                            <td>9</td> <td>10</td> <td>11</td> <td>12</td> <td>13</td> <td>14</td> <td>15</td>
-                        </tr>
+                                <tr>
+                                    <td class="no-class">2</td> <td class="no-class">3</td> <td class="no-class">4</td> <td class="no-class">5</td> <td class="no-class">6</td> <td class="no-class weekend">7</td> <td class="no-class weekend">8</td>
+                                </tr>
 
-                        <tr>
-                            <td>16</td> <td>17</td> <td>18</td> <td>19</td> <td>20</td> <td>21</td> <td>22</td>
-                        </tr>
-                        <tr>
-                            <td>23</td> <td>24</td> <td>25</td> <td>26</td> <td>27</td> <td>28</td> <td class="not-curr-month">1</td>
-                        </tr>
+                                <tr>
+                                    <td class="no-class">9</td> <td class="no-class">10</td> <td class="no-class">11</td> <td class="no-class">12</td> <td class="no-class">13</td> <td class="no-class weekend">14</td> <td class="no-class weekend">15</td>
+                                </tr>
 
-                    </tbody>
-                </table>
+                                <tr>
+                                    <td class="no-class">16</td> <td class="no-class">17</td> <td class="no-class">18</td> <td class="no-class">19</td> <td class="no-class">20</td> <td class="no-class weekend">21</td> <td class="no-class weekend">22</td>
+                                </tr>
+                                <tr>
+                                    <td class="no-class">23</td> <td class="no-class">24</td> <td class="no-class">25</td> <td class="no-class">26</td> <td class="no-class">27</td> <td class="no-class weekend">28</td> <td class="not-curr-month weekend">1</td>
+                                </tr>
 
-                <table class="next-month">
-                    <thead>
-                        <caption>Март</caption>
-                        <tr>
-                            <th class="weekday">ПН</th> <th class="weekday">ВТ</th> <th class="weekday">СР</th> <th class="weekday">ЧТ</th> <th class="weekday">ПТ</th> <th class="weekday">СБ</th> <th class="weekday">ВС</th> 
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="not-curr-month">26</td> <td class="not-curr-month">27</td> <td class="not-curr-month">28</td> <td class="not-curr-month">29</td> <td class="not-curr-month">30</td> <td class="not-curr-month">31</td> <td>1</td> 
-                        </tr>
+                            </tbody>
+                        </table>
+                    </li>
 
-                        <tr>
-                            <td>2</td> <td>3</td> <td>4</td> <td>5</td> <td>6</td> <td>7</td> <td>8</td>
-                        </tr>
+                    <li>
+                        <table class="next-month">
+                            <thead>
+                                <caption>Март</caption>
+                                <tr>
+                                    <th class="weekday">ПН</th> <th class="weekday">ВТ</th> <th class="weekday">СР</th> <th class="weekday">ЧТ</th> <th class="weekday">ПТ</th> <th class="weekday">СБ</th> <th class="weekday">ВС</th> 
+                                </tr>
+                            </thead>
 
-                        <tr>
-                            <td>9</td> <td>10</td> <td>11</td> <td>12</td> <td>13</td> <td>14</td> <td>15</td>
-                        </tr>
+                            <tbody>
+                                <tr>
+                                    <td class="not-curr-month">26</td> <td class="not-curr-month">27</td> <td class="not-curr-month">28</td> <td class="not-curr-month">29</td> <td class="not-curr-month">30</td> <td class="not-curr-month weekend">31</td> <td class="no-class weekend">1</td> 
+                                </tr>
 
-                        <tr>
-                            <td>16</td> <td>17</td> <td>18</td> <td>19</td> <td>20</td> <td>21</td> <td>22</td>
-                        </tr>
-                        <tr>
-                            <td>23</td> <td>24</td> <td>25</td> <td>26</td> <td>27</td> <td>28</td> <td class="not-curr-month">1</td>
-                        </tr>
-                    </tbody>
-                </table>
+                                <tr>
+                                    <td class="no-class">2</td> <td class="no-class">3</td> <td class="no-class">4</td> <td class="no-class">5</td> <td class="no-class">6</td> <td class="no-class weekend">7</td> <td class="no-class weekend">8</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="no-class">9</td> <td class="no-class">10</td> <td class="no-class">11</td> <td class="no-class">12</td> <td class="no-class">13</td> <td class="no-class weekend">14</td> <td class="no-class weekend">15</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="no-class">16</td> <td class="no-class">17</td> <td class="no-class">18</td> <td class="no-class">19</td> <td class="no-class">20</td> <td class="no-class weekend">21</td> <td class="no-class weekend">22</td>
+                                </tr>
+                                <tr>
+                                    <td class="no-class">23</td> <td class="no-class">24</td> <td class="no-class">25</td> <td class="no-class">26</td> <td class="no-class">27</td> <td class="no-class weekend">28</td> <td class="not-curr-month weekend">1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
             </div>
 
             <div id="prices">
-                <article class="price-card" id="once"></article>
-                <article class="price-card" id="abonement1"></article>
-                <article class="price-card" id="abonement2"></article>
-                <article class="price-card" id="maybe_holiday"></article>
+                <article class="price-card" id="once">
+                    <p>Разовое посещение</p>
+                    <p>1500 ₽</p>
+                </article>
+                <br>
+                <article class="price-card" id="abonement1">
+                    <p>Раз в неделю</p>
+                    <p>5000 ₽</p>
+                </article>
+                <br>
+                <article class="price-card" id="abonement2">
+                    <p>Дважды в неделю</p>
+                    <p>7000 ₽</p>
+                </article>
+                <br>
+                <article class="price-card" id="maybe_holiday_for_one">
+                    <p>*Дата праздника* | Индивидуальное занятие</p>
+                    <p>6000 ₽</p>
+                </article>
+                <br>
+                <article class="price-card" id="maybe_holiday_for_couple">
+                    <p>*Дата праздника* | Парное занятие</p>
+                    <p>1500 ₽ с участника</p>
+                </article>
             </div>
-
+            <br>
             <div id="appointment">
-
                 <form action="send_form.php" method="POST">  
                     <div>  
                         <label for="name">Ваше имя:</label>  
@@ -130,41 +160,29 @@
                     </div>  
                     <button type="submit">Отправить</button>  
                 </form>
-
-
             </div>
-
+            <br>
             <div id="answers">
 
                 <div id="qa1">
-                    <p id="q1"></p>
-                    <p id="a1"></p>
+                    <p id="q1">Какая у вас есть глина?</p>
+                    <p id="a1">Белая и красная</p>
                 </div>
 
                 <div id="qa2">
-                    <p id="q2"></p>
-                    <p id="a2"></p>
+                    <p id="q2">Сколько длится занятие?</p>
+                    <p id="a2">Час</p>
                 </div>
 
                 <div id="qa3">
-                    <p id="q3"></p>
-                    <p id="a3"></p>
-                </div>
-
-                <div id="qa4">
-                    <p id="q4"></p>
-                    <p id="a4"></p>
-                </div>
-
-                <div id="qa5">
-                    <p id="q5"></p>
-                    <p id="a5"></p>
+                    <p id="q3">Вы обжигаете изделия?</p>
+                    <p id="a3">Да</p>
                 </div>
 
             </div>
         </section>
     </main>
-
+    <br>
     <footer>
         <a target="_blank" href="https://icons8.com/icon/qVL8v8uZv9wc/pottery">Глиняная посуда</a> иконка от <a
             target="_blank" href="https://icons8.com">Icons8</a>
