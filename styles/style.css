@@ -183,8 +183,8 @@ main {
     list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 5%;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .schedule {
@@ -198,7 +198,8 @@ main {
 
 table {
     border-collapse: collapse;
-    width: 100%;
+    width: auto;
+    max-width: 100%;
     background-color: var(--white);
 }
 
@@ -269,7 +270,7 @@ caption {
 /* Адаптив */
 
 
-@media(max-width: 500px) {
+@media(max-width: 600px) {
     .about .logo-and-add {
         display: flex;
         flex-direction: column;
@@ -280,9 +281,21 @@ caption {
         width: 40%;
         border-radius: 15px;
     }
+
+    .about .logo-and-add p {
+        width: 80%;
+    }
 }
 
 @media(max-width: 600px) {
+    .calendar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .calendar li {
+    }
+
   .menu-icon {
     display: block;
   }
